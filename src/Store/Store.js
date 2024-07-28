@@ -1,7 +1,9 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
-import rootReducer from "../Reducer/Index";
+import { configureStore } from '@reduxjs/toolkit';
+import rootReducer from '../Reducer/Index.js';
 
-const store = createSlice(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
-
+const store = configureStore({
+  reducer: rootReducer,
+ // devTools: process.env.NODE_ENV !== 'production', // Enables Redux DevTools only in development
+});
 
 export default store;

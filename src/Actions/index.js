@@ -1,12 +1,11 @@
-const incNumber = ()=>{
+export const incNumber = ()=>{
     return{
         type : "Increment"
     }
 }
-const decNumber = ()=>{
+ export const decNumber = ()=>{
     return{
         type : "decrement"
     }
 }
 
-export default {incNumber,decNumber}
