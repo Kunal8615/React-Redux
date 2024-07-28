@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import store from './Store/Store'
+
+/* store.subscribe(()=> console.log(store.getState()));*/
 
 import './App.css'
 
@@ -9,14 +12,14 @@ function App() {
     <>
      <h1>Redux View</h1>
 
-     <div class="container">
+     <div className="container">
   <h1>Increment/Decrement counter</h1>
   <h4>using React and Redux</h4>
   
-  <div class="quantity">
-    <button class="quantity__minus" title="Decrement"><span>-</span></button>
-    <input name="quantity" type="text" class="quantity__input" value="0" />
-    <button class="quantity__plus" title="Increment"><span>+</span></button>
+  <div className="quantity">
+    <button className="quantity__minus" title="Decrement"><span>-</span></button>
+    <input name="quantity" type="text" className="quantity__input" value="0" />
+    <button className="quantity__plus" title="Increment"><span>+</span></button>
   </div>
 </div>
 
